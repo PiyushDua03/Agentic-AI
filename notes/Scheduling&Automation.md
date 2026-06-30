@@ -1,4 +1,4 @@
-##📅 Scheduling in Claude Code
+### 📅 Scheduling in Claude Code
 ## What is Scheduling?
 
 **Scheduling** is the ability to make Claude Code run **automatically at predefined times or intervals**, without requiring you to manually open your computer and start it.
