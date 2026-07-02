@@ -1,7 +1,5 @@
 # 📦 Claude Code Plugins
 
-> **Definition**
-
 > A **Claude Code Plugin** is an installable package that bundles multiple Claude Code components (agents, skills, hooks, MCP configurations, settings, etc.) into a reusable toolkit that can be shared, versioned, and installed by individuals or teams.
 
 <img width="1138" height="693" alt="Image" src="https://github.com/user-attachments/assets/d46963f9-d1ee-4c91-babd-e43cc680abde" />
