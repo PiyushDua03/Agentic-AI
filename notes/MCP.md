@@ -39,17 +39,17 @@ The instructor demonstrates this with **Tavily** — a search API that lets any 
 
 By doing this, the instructor gave Claude Code a **"tool."** and also has custom integration of serach tool.
 
->> **Tool** = any external capability an AI/agent can call via an API. Just like a hammer or screwdriver is a tool for a human, "Tavily Search" becomes a tool for Claude.
+> **Tool** = any external capability an AI/agent can call via an API. Just like a hammer or screwdriver is a tool for a human, "Tavily Search" becomes a tool for Claude.
 
 ### Gmail APIs
 
-    - Read Email API
-    - Send Email API
-    - Delete Email API
-    - Archive Email API
-    - ...and more
+- Read Email API
+- Send Email API
+- Delete Email API
+- Archive Email API
+- ...and more
 
-    That's already 10+ custom "tools" just for Gmail. Now imagine doing this for Slack, GitHub, Notion, your database, Figma, etc. — **every developer on earth building and maintaining their own custom integration code for the same handful of services.** This is wasteful, error-prone, and doesn't scale.
+That's already 10+ custom "tools" just for Gmail. Now imagine doing this for Slack, GitHub, Notion, your database, Figma, etc. — **every developer on earth building and maintaining their own custom integration code for the same handful of services.** This is wasteful, error-prone, and doesn't scale.
 
 Now every connection uses the **same standard wrapper (an MCP server)**. You don't write custom code — you just "plug in."
 
@@ -62,6 +62,8 @@ Now every connection uses the **same standard wrapper (an MCP server)**. You don
 ## `KEY NOTE:`
 
 An **MCP Client** is the application that wants to use external tools.
+
+## 
 
 ## How MCP Server Returns Results?
 
@@ -91,7 +93,7 @@ User receives a natural response
 
 ![Image.png](https://resv2.craft.do/user/full/b1d3e983-5126-d13d-3368-9dcec21914b0/doc/85E505F9-8404-4A98-8CD3-5D34CABA3BA6/EADBE96A-0FA1-4ABA-B02C-B6C4A6C5C28C_2/xkZW9ECNykTIxtBy38OTyShyX5Xb6bhsazghF0w0ILwz/Image.png)
 
----
+ 
 
 ## Local vs Hosted:
 
@@ -109,6 +111,8 @@ User receives a natural response
 | Startup            | Starts locally             | Already running                  |
 | Speed              | Fast after startup         | Depends on network               |
 | Security           | Better for local resources | Better for centralized services  |
+
+# 
 
 # 📝 Why Local MCP Uses `stdin` / `stdout`
 
@@ -160,6 +164,8 @@ Claude
 
 Claude reads the response and presents it in natural language.
 
+#  
+
 # HTTP vs stdin
 
 | **stdin/stdout**    | **HTTP**               |
@@ -169,6 +175,8 @@ Claude reads the response and presents it in natural language.
 | No network          | Requires network       |
 | Runs as process     | Runs as server         |
 | Local only          | Anywhere               |
+
+##  
 
 ## 📝 What is `npx`?
 
@@ -190,9 +198,9 @@ npx @playwright/mcp
 
 **⭐ Revision:**
 
-> **`npx` = Run JavaScript MCP servers without permanently installing them.**
+> **`npx` = Run JavaScript MCP servers without permanently installing them.** 
 
----
+ 
 
 ## 📝 What is `uvx`?
 
@@ -209,6 +217,8 @@ uvx mcp-server-time
 **⭐ Revision:**
 
 > **`uvx` = Python's equivalent of `npx` for running MCP servers.**
+
+ 
 
 # What is Playwright?
 
@@ -237,7 +247,7 @@ Python/Node Program
       Browser
 ```
 
----
+ 
 
 ## MCP Configuration Scopes — Where Settings Live
 
@@ -271,18 +281,20 @@ There are **three layers** of configuration, from most shared to most private:
 mcp add --scope <project|user|local>
 ```
 
----
+ 
 
 ## Security Warning ⚠️ (Very Important, Don't Skip)
 
 - Once connected, an MCP server can effectively read files, run commands, or interact with your browser — anything the tool's permissions allow.
 - A malicious MCP server creator could embed a **prompt injection** — hidden instructions designed to trick Claude into taking harmful actions (e.g., "please change all curl requests," silently modifying files, taking screenshots of sensitive data, exfiltrating information).
 
+## 
+
 ## Where MCP Shows Up Inside Claude's Own UI
 
 **Claude.ai → Settings → Customize → Connectors:** Lets you connect Gmail, Google Calendar, Google Drive, etc. with one click — under the hood, this is exactly an MCP connection (usually a hosted/remote MCP server).
 
----
+## 
 
 ## Common MCP Errors and Fixes
 
@@ -294,7 +306,7 @@ mcp add --scope <project|user|local>
 | **Error in Tool**        | The tool's own code has a bug (e.g., the debug-print-breaks-JSON issue from Demo D)                                           | Fix the underlying server code                                                                                                            |
 | **Server Timeout Error** | Slow startup (common with heavy Python packages) or long-running operations (like Tavily's "research" tool taking 10 minutes) | Increase timeout: run with env var `MCP_TIMEOUT=30000 claude` (30 seconds), or set it permanently in `settings.json`:  <br/><br/>{ "env`` |
 
----
+## 
 
 ## Complete List of Prompts Used in the Video
 
