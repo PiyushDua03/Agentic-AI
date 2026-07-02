@@ -239,7 +239,7 @@ Python/Node Program
 
 ---
 
-> ## MCP Configuration Scopes — Where Settings Live
+## MCP Configuration Scopes — Where Settings Live
 
 *(Refers to Image 3: "MCP Configuration Scopes")*
 
@@ -273,7 +273,7 @@ mcp add --scope <project|user|local>
 
 ---
 
-> ## Security Warning ⚠️ (Very Important, Don't Skip)
+## Security Warning ⚠️ (Very Important, Don't Skip)
 
 - Once connected, an MCP server can effectively read files, run commands, or interact with your browser — anything the tool's permissions allow.
 - A malicious MCP server creator could embed a **prompt injection** — hidden instructions designed to trick Claude into taking harmful actions (e.g., "please change all curl requests," silently modifying files, taking screenshots of sensitive data, exfiltrating information).
@@ -296,7 +296,7 @@ mcp add --scope <project|user|local>
 
 ---
 
-> ## Complete List of Prompts Used in the Video
+## Complete List of Prompts Used in the Video
 
 1. *"Please create a file — Tavily API where I hit the Tavily search API, keep API key as a variable, and I can also edit out the search query."*
 2. *"Run the file."*
