@@ -114,14 +114,14 @@ User receives a natural response
 
 ### What is `stdin` and `stdout`?
 
-    - **stdin (Standard Input):** Used to send requests **to** the MCP server.
-    - **stdout (Standard Output):** Used by the MCP server to send results **back** to Claude.
+- **stdin (Standard Input):** Used to send requests **to** the MCP server.
+- **stdout (Standard Output):** Used by the MCP server to send results **back** to Claude.
 
-    ### Why are they used?
+### Why are they used?
 
-    A **Local MCP Server** runs as a **local process** on your computer. Since both Claude and the MCP server are on the same machine, they communicate directly using `stdin` and `stdout` instead of making HTTP requests over the internet.
+A **Local MCP Server** runs as a **local process** on your computer. Since both Claude and the MCP server are on the same machine, they communicate directly using `stdin` and `stdout` instead of making HTTP requests over the internet.
 
-    ### Communication Flow
+### Communication Flow
 
 ```other
 Claude
@@ -139,9 +139,9 @@ stdout (Response)
 Claude
 ```
 
-    ### Example
+### Example
 
-    **Claude sends (stdin):**
+**Claude sends (stdin):**
 
 ```other
 {
@@ -150,7 +150,7 @@ Claude
 }
 ```
 
-    **MCP Server returns (stdout):**
+**MCP Server returns (stdout):**
 
 ```other
 {
@@ -158,9 +158,9 @@ Claude
 }
 ```
 
-    Claude reads the response and presents it in natural language.
+Claude reads the response and presents it in natural language.
 
-    # HTTP vs stdin
+# HTTP vs stdin
 
 | **stdin/stdout**    | **HTTP**               |
 | ------------------- | ---------------------- |
@@ -170,62 +170,62 @@ Claude
 | Runs as process     | Runs as server         |
 | Local only          | Anywhere               |
 
-    ## 📝 What is `npx`?
+## 📝 What is `npx`?
 
-    - **`npm`** installs JavaScript/Node.js packages permanently.
-    - **`npx`** downloads (if needed) and **runs a package instantly** without permanent installation.
-    - Used to quickly start **JavaScript-based MCP servers**.
+- **`npm`** installs JavaScript/Node.js packages permanently.
+- **`npx`** downloads (if needed) and **runs a package instantly** without permanent installation.
+- Used to quickly start **JavaScript-based MCP servers**.
 
-    **Flow:**
+**Flow:**
 
 ```other
 Download (if needed)        ↓Run        ↓Exit
 ```
 
-    **Example:**
+**Example:**
 
 ```other
 npx @playwright/mcp
 ```
 
-    **⭐ Revision:**
+**⭐ Revision:**
 
-    >> **`npx` = Run JavaScript MCP servers without permanently installing them.**
+> **`npx` = Run JavaScript MCP servers without permanently installing them.**
 
 ---
 
-    ## 📝 What is `uvx`?
+## 📝 What is `uvx`?
 
-    - **`uvx`** is used to run **Python-based MCP servers**.
-    - Downloads (if needed) and runs the package without permanent installation.
-    - Python equivalent of `npx`.
+- **`uvx`** is used to run **Python-based MCP servers**.
+- Downloads (if needed) and runs the package without permanent installation.
+- Python equivalent of `npx`.
 
-    **Example:**
+**Example:**
 
 ```other
 uvx mcp-server-time
 ```
 
-    **⭐ Revision:**
+**⭐ Revision:**
 
-    >> **`uvx` = Python's equivalent of `npx` for running MCP servers.**
+> **`uvx` = Python's equivalent of `npx` for running MCP servers.**
 
-    # What is Playwright?
+# What is Playwright?
 
-    **Playwright itself is not an MCP server.**
+**Playwright itself is not an MCP server.**
 
-    Playwright is an **open-source browser automation library/framework** developed by Microsoft.
+Playwright is an **open-source browser automation library/framework** developed by Microsoft.
 
-    It allows programs to:
+It allows programs to:
 
-    - Open Chrome/Edge/Firefox
-    - Click buttons
-    - Fill forms
-    - Scroll pages
-    - Take screenshots
-    - Download files
+- Open Chrome/Edge/Firefox
+- Click buttons
+- Fill forms
+- Scroll pages
+- Take screenshots
+- Download files
 
-    Example:
+Example:
 
 ```other
 Python/Node Program
