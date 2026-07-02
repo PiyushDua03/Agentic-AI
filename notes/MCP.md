@@ -91,13 +91,13 @@ User receives a natural response
 - **MCP Server = Toolbox 🧰** → Contains many workers/tools.
 - **Claude (LLM) = Manager 🧠** → Reads your request and intelligently decides **which tool** from **which MCP server** should be used.
 
-![Image.png](https://resv2.craft.do/user/full/b1d3e983-5126-d13d-3368-9dcec21914b0/doc/85E505F9-8404-4A98-8CD3-5D34CABA3BA6/EADBE96A-0FA1-4ABA-B02C-B6C4A6C5C28C_2/xkZW9ECNykTIxtBy38OTyShyX5Xb6bhsazghF0w0ILwz/Image.png)
-
+<img width="679" height="297" alt="Image" src="https://github.com/user-attachments/assets/fdc6a042-bf97-4267-89d8-948183ca0895" />
  
 
 ## Local vs Hosted:
 
-![Image.png](https://resv2.craft.do/user/full/b1d3e983-5126-d13d-3368-9dcec21914b0/doc/85E505F9-8404-4A98-8CD3-5D34CABA3BA6/FADD66C2-B881-476A-8243-5DDDB814BFDF_2/Ayyq0nfxIYoYaX4mcnqSjPe5ozgfhHEfCXTGL4t6Tswz/Image.png)
+<img width="1054" height="724" alt="Image" src="https://github.com/user-attachments/assets/1d7517d9-51fc-43e6-87b5-e28589dd17b3" />
+
 
 | **Feature**        | **Local MCP**              | **Hosted MCP**                   |
 | ------------------ | -------------------------- | -------------------------------- |
@@ -251,7 +251,7 @@ Python/Node Program
 
 ## MCP Configuration Scopes — Where Settings Live
 
-*(Refers to Image 3: "MCP Configuration Scopes")*
+<img width="928" height="556" alt="image" src="https://github.com/user-attachments/assets/9dabb5f3-f7d6-467f-8042-73828261cd7e" />
 
 There are **three layers** of configuration, from most shared to most private:
 
@@ -266,8 +266,7 @@ There are **three layers** of configuration, from most shared to most private:
 - Shared configuration → goes in **Project** scope
 - Personal-but-not-secret configuration → goes in **User** scope
 - Secrets/API keys → go in **Local** scope, and that file must be added to `.gitignore`
-
-                            u can save them in .env file
+                     u can save them in .env file
 
 **Why this matters (Git basics, explained simply, as the instructor did):**
 
