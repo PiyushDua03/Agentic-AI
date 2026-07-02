@@ -105,7 +105,7 @@ Once installed, running `/skill-creator` (or asking Claude directly) unlocks a g
 
 # The Skill File's "Front Matter"
 
-![Image.png](https://resv2.craft.do/user/full/b1d3e983-5126-d13d-3368-9dcec21914b0/doc/85E505F9-8404-4A98-8CD3-5D34CABA3BA6/564246D9-A03C-4891-A55D-65AF2F271BF2_2/xrcXEl0n1kAVhEsdaAFDvOedvyyF9py9ngVsFtnkCxkz/Image.png)
+<img width="1850" height="1094" alt="image" src="https://github.com/user-attachments/assets/b98e5f1e-6850-4ef3-97f1-5255c528222c" />
 
 | **Field**                      | **Required?** | **Purpose**                                                                                                                                                                                                   |
 | ------------------------------ | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -174,8 +174,8 @@ What happened:
 - Instead, it **edited the actual script code** so the correct output path is baked in permanently.
 
 
+<img width="2208" height="1292" alt="image" src="https://github.com/user-attachments/assets/d410f4f1-c544-4457-8b8a-065ae8967589" />
 
-![Image.png](https://resv2.craft.do/user/full/b1d3e983-5126-d13d-3368-9dcec21914b0/doc/85E505F9-8404-4A98-8CD3-5D34CABA3BA6/C0623E56-9E0F-4999-9612-1B8E09EF7EE9_2/AEPu0yB1WYRbPFAyksLYcNoYeIepTyNzIccTHNhWgpwz/Image.png)
 
 |                | **Skill**                                                                                                   | **Sub-Agent**                                                                 |
 | -------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
